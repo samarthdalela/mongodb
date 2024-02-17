@@ -44,8 +44,6 @@ app.post("/signin",(req,res)=>{
     console.log(req.body)
 
 //     db.collection('users').find({name:req.body.name, password:req.body.password}).toArray().then(function(result,err){
-// //    if(result.password){res.redirect("https://shripriti.in/")}
-//        console.log(result.password)
 //     })
 var pro = {
     projection: { name: req.body.name, password: req.body.password,email:req.body.email }
